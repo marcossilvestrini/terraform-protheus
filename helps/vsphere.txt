@@ -1,0 +1,6 @@
+license: JM0C3-4C082-M8VG0-02AU2-0NKMH
+url: http://192.168.0.32
+user: root
+pass: admin@123
+storage: datastore1
+networking: vlan-skynet

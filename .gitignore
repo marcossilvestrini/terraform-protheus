@@ -1,0 +1,9 @@
+# ignore files general
+**/.vscode
+**/.log
+workspace.code-terraform-protheus.code-workspace
+
+# security
+**/authorized_keys
+**/*.pub
+**/*.ppk
