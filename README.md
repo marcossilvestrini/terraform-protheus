@@ -4,7 +4,7 @@
 
 Project for provisioning ERP Protheus development environment for code, build and test.
 >This projetc use provider VMWare VSphere ESXi bare-metal Hypervisor \
->This project use box Oracle Linux 8 for provisioning environment \
+>This project use Oracle Linux 8 for provisioning environment \
 >This project user Jinja Templates for configure environment \
 >Pay attention to **download the artifacts** to not have problems in provisioning
 
