@@ -1,7 +1,9 @@
 # Provision ERP Protheus With Terraform and Ansible
 
+![terraform-protheus](https://user-images.githubusercontent.com/62715900/108439048-4913dd00-722f-11eb-81a3-08a274e1c489.png)
+
 Project for provisioning ERP Protheus development environment for code, build and test.
->This projetc use provider VMWare VSphere Hypervisor \
+>This projetc use provider VMWare VSphere ESXi bare-metal Hypervisor \
 >This project use box Oracle Linux 8 for provisioning environment \
 >This project user Jinja Templates for configure environment \
 >Pay attention to **download the artifacts** to not have problems in provisioning
@@ -46,6 +48,14 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ## Stack Resources
 
+### Hypervisor
+
+Bare-Metal: VMWare VSphere ESXi 7\
+CPU: 1x8 cores\
+RAM: 16gb\
+STORAGE: 200gb
+
+### Virtual Machines
 
 SO: Oracle Linux 8\
 CPU: 6 vcpus\
