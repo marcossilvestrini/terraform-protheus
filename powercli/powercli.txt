@@ -1,0 +1,38 @@
+# Install Module
+ Install-Module VMware.PowerCLI
+
+# Helps
+Get-Help Connect-VIServer -examples
+
+# Connect to Server VSphere
+Connect-VIServer
+This cmdlet establishes a connection to a vCenter Server system.
+
+Examples:
+Connect-VIServer -Server 10.23.112.235 -Protocol https -User admin -Password pass
+Connect-VIServer Server -Credential $myCredentialsObject -Port 1234
+Connect-VIServer "Server" -SessionId $sessionId
+Connect-VIServer "Server" -User user -Password pass -SaveCredentials
+Connect-VIServer -Menu
+Connect-VIServer "Server" -AllLinked
+
+# Obtain system information
+Get-VMHost | Format-List
+
+# Get a list of VMs and status
+Get-VM | Format-List
+
+# Get detailed information on a specific VM
+Get-VMGuest GUEST_NAME | Format-List
+
+# View Datastore information
+Get-HardDisk -Datastore DATASTORE_NAME
+
+# Start a specified VM
+Start-VM -VM VM_NAME -Confirm
+
+# Restart a specified VM's OS
+Restart-VMGuest -Guest GUEST_NAME -Confirm
+
+# Restart a specified host server
+Restart-VMHost -VMHost HOSTNAME -Force

@@ -51,7 +51,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 ### Hypervisor
 
 Bare-Metal: VMWare VSphere ESXi 7\
-CPU: 1x8 cores\
+CPU: 1x9 cores\
 RAM: 16gb\
 STORAGE: 200gb
 
@@ -72,16 +72,11 @@ Protheus: 12.1.27
 
 ## Install Terraform
 
-### Download
-
 ```linux
-foo
-```
-
-### Install
-
-```linux
-foo
+sudo yum install -y yum-utils
+sudo yum-config-manager --add-repo https://rpm.releases.hashicorp.com/RHEL/hashicorp.repo
+sudo yum -y install terraform
+sudo terraform -install-autocomplete
 ```
 
 ## Create Box
