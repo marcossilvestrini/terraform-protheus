@@ -72,7 +72,7 @@ Protheus: 12.1.27
 
 ## Setup Vsphere ESXi
 
-### Enable SSH:
+### Enable SSH
 
 - Log directly in to the ESXi host.
 - Open the DCUI on the host.
@@ -86,6 +86,7 @@ Protheus: 12.1.27
 - Under System, select Security Profile.
 - In the Lockdown Mode panel, click Edit.
 - Click Lockdown Mode and select one of the lockdown mode options.
+- Create user and add in role Administrator for terraform
 - Add User exception
 - Validate ssh connection with this user
 - Done!
