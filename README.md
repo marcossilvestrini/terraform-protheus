@@ -70,6 +70,26 @@ RAM: 4GB
 Database: PostgreSQL 10.15\
 Protheus: 12.1.27
 
+## Setup Vsphere ESXi
+
+### Enable SSH:
+
+- Log directly in to the ESXi host.
+- Open the DCUI on the host.
+- Press F2 for Initial Setup.
+- Troubleshooting, Enable SSH
+
+### Disable Lockdown and Add SSH User Exception
+
+- Browse to the host in the vSphere Web Client inventory.
+- Click the Manage tab and click Settings. (with 6.7, Click the Configure tab)
+- Under System, select Security Profile.
+- In the Lockdown Mode panel, click Edit.
+- Click Lockdown Mode and select one of the lockdown mode options.
+- Add User exception
+- Validate ssh connection with this user
+- Done!
+
 ## Install Terraform
 
 ```linux

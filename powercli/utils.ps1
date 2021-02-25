@@ -1,6 +1,6 @@
 # Variables
 $user = "terraform"
-$pass = "admin@123"
+$pass = "admin@123456"
 $server = "192.168.0.32"
 
 # Functions

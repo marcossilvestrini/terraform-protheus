@@ -1,5 +1,35 @@
+# Infos for Provisionning
+
 url: https://192.168.0.32
-user: root
+user: terraform
 pass: admin@123
-storage: datastore1
+datacenter: ha-datacenter
+storage: datastore-skynet
 networking: vlan-skynet
+
+# Setup Vsphere ESXI
+
+For use Terraform in Vsphere ESXI Free, execute tasks:
+
+Enable SSH:
+- Log directly in to the ESXi host.
+- Open the DCUI on the host.
+- Press F2 for Initial Setup.
+- Troubleshooting, Enable SSH
+
+Disable Lockdown mode from the vSphere Web Client:
+- Browse to the host in the vSphere Web Client inventory.
+- Click the Manage tab and click Settings. (with 6.7, Click the Configure tab)
+- Under System, select Security Profile.
+- In the Lockdown Mode panel, click Edit.
+- Click Lockdown Mode and select one of the lockdown mode options.
+- Add User exception
+- Validate ssh connection with this user
+- Done!
+
+Reset Trial License(ATTENTION: Purpose of development and testings!!!)
+
+rm -r /etc/vmware/license.cfg
+cp /etc/vmware/.#license.cfg /etc/vmware/license.cfg
+/etc/init.d/vpxa restart
+
