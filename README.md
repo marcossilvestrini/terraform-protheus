@@ -93,7 +93,13 @@ Protheus: 12.1.27
 - Validate ssh connection with this user
 - Done!
 
-## Install Terraform
+## Create a VM Template for Provisioning
+
+- Create a Virtual Machine for stack app
+- Executing setup in this Virtual Machine(updates,ssh,packages,shares,etc)
+- Create a Template Virtual Machine for terraform clone after
+
+## Install Terraform(In your devops machine our desktop)
 
 ```linux
 sudo yum install -y yum-utils
@@ -102,13 +108,13 @@ sudo yum -y install terraform
 sudo terraform -install-autocomplete
 ```
 
-## Create Box
+## Up Stack
 
 1. clone this reposotory
 2. Generate your ssh pub key and **copy to security/ folder**
 3. Download artefacts of ERP(license,rpo,appserver,etc)
 4. Copy artefacts for relative folders(license,rpo,appserver,etc)
-5. foo
+5. cd terrafor-protheus\linux_or_windows
 6. foo
 7. foo
 8. foo
