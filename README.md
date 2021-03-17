@@ -30,8 +30,8 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 - [Git](https://git-scm.com/doc)
 - [VSphere](https://docs.vmware.com/en/VMware-vSphere/index.html)
-- [Terraform](https://www.terraform.io/downloads.html)
 - [Python](https://www.python.org/doc/)
+- [Terraform](https://www.terraform.io/downloads.html)
 - [Ansible](https://docs.ansible.com/index.html)
 
 ## References
