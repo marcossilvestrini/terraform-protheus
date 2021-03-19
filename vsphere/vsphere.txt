@@ -6,7 +6,11 @@ pass: admin@123
 datacenter: ha-datacenter
 storage: datastore-skynet
 networking: vlan-skynet
-template: template-oracle-linux-8
+
+templates
+Linux:
+Name: template-oracle-linux-8
+Ip: 192.168.0.199
 
 
 # Setup Vsphere ESXI
