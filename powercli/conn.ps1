@@ -5,9 +5,9 @@
 Connect >$null
 
 # List Vms
-# (Get-VM).Name | Format-List -WarningAction:Ignore
+(Get-VM).Name | Format-List -WarningAction:Ignore
 
 # Start VM
-# $vm=(Get-VM -Name *ora*).Name
-# Start-VM -VM $vm -Confirm -RunAsync
-# $vm = (Get-VM -Name *ora*).PowerState
+$vm=(Get-VM -Name *ora*).Name
+Start-VM -VM $vm -Confirm:$false -RunAsync
+$vm = (Get-VM -Name *ora*).PowerState

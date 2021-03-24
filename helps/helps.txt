@@ -1,0 +1,15 @@
+# Sync files
+rsync -avzh --exclude=workspace.code-terraform-protheus.code-workspace --exclude=.vscode --exclude=.git --progress /mnt/projects/terraform-protheus/ /home/terraform/terraform-protheus/
+
+# Copy files Local --->Remote
+scp -p id_rsa terraform@192.168.0.33:/home/terraform/
+scp -p id_rsa terraform@192.168.0.199:/home/terraform/
+
+# Copy using pk
+scp -C -i ./pk-srv-devops id_rsa terraform@192.168.0.33:/home/terraform/
+
+# Connect ssh using pk
+ssh -i ~/.ssh/id_rsa terraform@192.168.0.33
+ssh -i ~/.ssh/id_rsa terraform@192.168.0.199
+
+

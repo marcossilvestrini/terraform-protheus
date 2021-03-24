@@ -7,3 +7,4 @@ workspace.code-terraform-protheus.code-workspace
 **/authorized_keys
 **/*.pub
 **/*.ppk
+security/
