@@ -3,7 +3,7 @@
 ![terraform-protheus](https://user-images.githubusercontent.com/62715900/108439048-4913dd00-722f-11eb-81a3-08a274e1c489.png)
 
 Project for provisioning ERP Protheus development environment for code, build and test.
->This projetc use provider VMWare VSphere ESXi bare-metal Hypervisor \
+>This projetc use VMWare VSphere ESXi bare-metal Hypervisor \
 >This project use Oracle Linux 8 for provisioning environment \
 >This project user Jinja Templates for configure environment \
 >Pay attention to **download the artifacts** to not have problems in provisioning
