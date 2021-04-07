@@ -5,7 +5,7 @@ variable "data_store" {
   default = "datastore-skynet"
 }
 variable "mgmt_lan" {
-  default = "vlan-skynet"
+  default = "vlan-NAT"
 }
 variable "net_adapter_type" {
   default = "vmxnet3"

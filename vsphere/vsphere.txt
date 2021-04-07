@@ -5,7 +5,7 @@ user: terraform
 pass: admin@123456
 datacenter: ha-datacenter
 storage: datastore-skynet
-networking: vlan-skynet
+networking: vlan-skynet, vlan-NAT
 
 templates
 Linux:
