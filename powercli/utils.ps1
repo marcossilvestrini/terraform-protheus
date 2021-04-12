@@ -19,7 +19,9 @@ Function Connect {
     Save credential for user others connections
     #>
     # conn in server and save credentials for use
-    Connect-VIServer $server -User $user -Password $pass -SaveCredentials -WarningAction:SilentlyContinue
+    # Connect-VIServer $server -User $user -Password $pass -SaveCredentials -WarningAction:SilentlyContinue
+    Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
+    Connect-VIServer $server -User $user -Password $pass  -WarningAction:SilentlyContinue
 
 }
 

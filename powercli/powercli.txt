@@ -1,6 +1,9 @@
 # Install Module
  Install-Module VMware.PowerCLI
 
+ Linux
+ install-module vmware.powercli
+
 # Helps
 Get-Help Connect-VIServer -examples
 
@@ -36,3 +39,8 @@ Restart-VMGuest -Guest GUEST_NAME -Confirm
 
 # Restart a specified host server
 Restart-VMHost -VMHost HOSTNAME -Force
+
+# Errors
+
+## Error - Connect-VIServer - Could not establish trust relationship for the SSL/TLS secure channel
+Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
