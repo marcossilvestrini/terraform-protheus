@@ -8,3 +8,9 @@ workspace.code-terraform-protheus.code-workspace
 **/*.pub
 **/*.ppk
 security/
+
+# Files
+*tar.gz
+*.zip
+webapp.so
+tttp120.rpo

@@ -1,5 +1,12 @@
 # Sync files
-rsync -avzh --exclude=workspace.code-terraform-protheus.code-workspace --exclude=.vscode --exclude=.git --progress /mnt/projects/terraform-protheus/ /home/terraform/terraform-protheus/
+rsync -avzh --exclude=workspace.code-terraform-protheus.code-workspace \
+--exclude=.vscode \
+--exclude=.git \
+--progress /mnt/projects/terraform-protheus/ /home/terraform/terraform-protheus/
+
+# Permission in Private Key
+sudo chmod 600 pk-serv-devops
+
 
 # Copy files Local --->Remote
 scp -p id_rsa terraform@192.168.0.33:/home/terraform/

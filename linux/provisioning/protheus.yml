@@ -1,0 +1,16 @@
+- hosts: protheus
+  become: yes
+  vars_files:
+    - roles/jenkins/vars/main.yml
+    - roles/postgresql/vars/main.yml
+  roles:
+    - common
+    - postgresql
+    - dictionary
+    - rpo
+    - license
+    - dbaccess
+    - appserver
+    - smartclient
+    # Optional
+    # - jenkins
