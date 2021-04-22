@@ -5,6 +5,7 @@
 Project for provisioning ERP Protheus development environment for code, build and test.
 >This projetc use VMWare VSphere ESXi bare-metal Hypervisor \
 >This project use Oracle Linux 8 for provisioning environment \
+>This project use Windos Server 2019 for provisioning environment \
 >This project user Jinja Templates for configure environment \
 >Pay attention to **download the artifacts** to not have problems in provisioning
 
@@ -65,7 +66,7 @@ RAM: 8GB
 
 SO: Windows 2019\
 CPU: 3 vcpus\
-RAM: 4GB
+RAM: 8GB
 
 ## Stack Version
 
@@ -108,6 +109,13 @@ sudo yum -y install terraform
 sudo terraform -install-autocomplete
 ```
 
+## Setup Server Devops\Terraform\Ansible
+
+- Create user terraform
+- Add user in sudoers
+- Create ssh for user terraform
+- Add this key in authorized_keys in template
+- Test ansible ping in template
 ## Up Stack
 
 1. clone this reposotory

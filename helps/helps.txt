@@ -12,7 +12,7 @@ sudo chmod 600 pk-serv-devops
 scp -p id_rsa terraform@192.168.0.33:/home/terraform/
 scp -p id_rsa terraform@192.168.0.199:/home/terraform/
 
-# Copy using pk
+# Copy using pk - 
 scp -C -i ./pk-srv-devops id_rsa terraform@192.168.0.33:/home/terraform/
 
 # Connect ssh using pk

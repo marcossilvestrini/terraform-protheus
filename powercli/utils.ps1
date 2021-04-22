@@ -1,8 +1,3 @@
-# Variables
-$user = "terraform"
-$pass = "admin@123456"
-$server = "192.168.0.32"
-
 # Functions
 Function Connect {
     <#
@@ -16,10 +11,24 @@ Function Connect {
     Connect
 
     .NOTES
-    Save credential for user others connections
     #>
+    Param
+    (
+
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
+        $server,
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
+        $user,
+        [Parameter(Mandatory = $true)]
+        [ValidateNotNull()]
+        [ValidateNotNullOrEmpty()]
+        $pass
+    )
     # conn in server and save credentials for use
-    # Connect-VIServer $server -User $user -Password $pass -SaveCredentials -WarningAction:SilentlyContinue
     Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
     Connect-VIServer $server -User $user -Password $pass  -WarningAction:SilentlyContinue
 

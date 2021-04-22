@@ -1,11 +1,37 @@
 # Infos for Provisionning
 
+# Vsphere
+ip: 192.168.0.32
+user: root
+pass: admin@123
+
+Web Client
 url: https://192.168.0.32
 user: terraform
 pass: admin@123456
+
+Ressources
 datacenter: ha-datacenter
 storage: datastore-skynet
 networking: vlan-skynet, vlan-NAT
+
+# vCenter
+ip: 192.168.0.31
+user: root
+pass: admin@123456
+
+Web Admin\Setup
+url: https://192.168.0.31:5480
+user: root
+pass: admin@123456
+
+Web Client
+url: https://192.168.0.31
+user: administrator@192.168.0.31
+pass: @dm!N@123456
+
+Ressources
+datacenter: skynet
 
 templates
 Linux:
