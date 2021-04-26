@@ -53,20 +53,31 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 
 ### Hypervisor
 
+#### Hosts
+
 Bare-Metal: VMWare VSphere ESXi 7\
-CPU: 1x9 cores\
-RAM: 16gb\
-STORAGE: 200gb
+CPU: 1x8 cores\
+RAM: 12gb\
+DISK1: 200GB
+DISK2: 400GB
+
+#### Appliance
+
+Appliance: VMware Vcenter 7\
+CPU: 1x6 cores\
+RAM: 12gb\
+DISK1: 200GB
+DISK2: 400GB
 
 ### Virtual Machines
 
 SO: Oracle Linux 8\
-CPU: 6 vcpus\
-RAM: 8GB
+CPU: 4 vcpus\
+RAM: 4GB
 
 SO: Windows 2019\
-CPU: 3 vcpus\
-RAM: 8GB
+CPU: 4 vcpus\
+RAM: 4GB
 
 ## Stack Version
 

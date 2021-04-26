@@ -11,7 +11,7 @@ user: terraform
 pass: admin@123456
 
 Ressources
-datacenter: ha-datacenter
+datacenter: skynet
 storage: datastore-skynet
 networking: vlan-skynet, vlan-NAT
 

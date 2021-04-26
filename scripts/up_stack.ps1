@@ -21,7 +21,7 @@ Write-Host "Power Off Virtual Machine: [$($vm)]" -BackgroundColor White -Foregro
 ## Set Memory
 $vmxName = "VMware ESXi 7"
 $vmxConfig = (Get-VMX -VMXName $vmxName).Config
-$memoryMB = "16384"
+$memoryMB = "12000"
 $processors = "8"
 # SYNTAX: Set-VMXmemory [-VMXName <Object>] [-config <Object>] -MemoryMB <Int32> [<CommonParameters>]
 Set-VMXmemory -VMXName $vmxName -config $vmxConfig -MemoryMB $memoryMB
@@ -60,7 +60,7 @@ Write-Host "Power Off Virtual Machine: [$($vm)]" -BackgroundColor White -Foregro
 ## Set Memory
 $vmxName = "VMware-vCenter-Server-Appliance-7.0.0"
 $vmxConfig = (Get-VMX -VMXName $vmxName).Config
-$memoryMB = "8192"
+$memoryMB = "12000"
 $processors = "6"
 # SYNTAX: Set-VMXmemory [-VMXName <Object>] [-config <Object>] -MemoryMB <Int32> [<CommonParameters>]
 Set-VMXmemory -VMXName $vmxName -config $vmxConfig -MemoryMB $memoryMB
