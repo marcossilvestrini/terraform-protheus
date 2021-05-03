@@ -56,7 +56,7 @@ This project is licensed under the MIT License - see the LICENSE.md file for det
 #### Hosts
 
 Bare-Metal: VMWare VSphere ESXi 7\
-CPU: 1x8 cores\
+vCPU: 8\
 RAM: 12gb\
 DISK1: 200GB
 DISK2: 400GB
@@ -64,15 +64,14 @@ DISK2: 400GB
 #### Appliance
 
 Appliance: VMware Vcenter 7\
-CPU: 1x6 cores\
+vCPU: 6\
 RAM: 12gb\
 DISK1: 200GB
-DISK2: 400GB
 
 ### Virtual Machines
 
 SO: Oracle Linux 8\
-CPU: 4 vcpus\
+vCPU: 4 \
 RAM: 4GB
 
 SO: Windows 2019\
